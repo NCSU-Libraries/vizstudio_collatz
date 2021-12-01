@@ -6,6 +6,7 @@
 !media/
 !images/
 !assets/
+!audio/
 
 # ignore work files and zips
 _*
