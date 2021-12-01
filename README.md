@@ -27,7 +27,7 @@ Each number in the sequence is accompanied by a tone in the C major pentatonic s
 The following rules determine which tone is heard:
 
 * 4, 2 and 1 are always accompanied by E3, D3 and C3 respectively, providing a musical resolution to the sequence
-* The initial number in the sequence (except 4, 2 or 1) is accompanied by A4 
+* The initial number in the sequence is accompanied by A4 (unless that number if 4, 2 or 1)
 * If the number is higher than the previous one (3x + 1) it is accompanied by C4 (except 4, 2 or 1)
 * If the number is lower than the previous one (x ÷ 2) it is accompanied by G3 (except 4, 2 or 1)
 
