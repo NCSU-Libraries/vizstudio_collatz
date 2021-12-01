@@ -56,7 +56,7 @@ bash zip.sh
 
 There are 2 Ruby scripts included that you can run from the command line just for fun (if you have Ruby installed, which you probably do even if you didn't know it).
 
-* `collatz_sequence_lengths.rb` - Generates full sequences for all numbers from 1 to 1,000,000 and outputs the length of each sequence. Notice how many of the sequences have the same length, and how those tend to cluster together. Don't try to find a pattern in this data as it could drive you insane.
+* `collatz_sequence_lengths.rb` - Generates full sequences for all numbers from 1 to 1,000,000 and outputs the length of each sequence. Notice how many of the sequences have the same length, and how those tend to cluster together. Don't try to find a pattern in this.
 
 * `collatz_sequences.rb` - Generates and outputs full sequences for all numbers from 1 to 1,000,000. This one takes longer to run, and is less interesting.
 
