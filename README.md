@@ -13,7 +13,7 @@ The Collatz Conjecture states that, for any positive integer selected as the fir
 
 ### Visual components
 
-Each new number in the sequence is generated and displayed at a rate of about 1 every 0.75 seconds. Values are presented inside a colored circle: odd numbers in a blue/green circle, even numbers in a red/pink circle. Below the current number is displayed the initial number in the sequence (n) and the number of times the funtion was applied to generate the number (i, where the first number is i=0, the second i=1, etc.)
+Each new number in the sequence is generated and displayed at a rate of about 1 every 0.75 seconds. Values are presented inside a colored circle: odd numbers in a blue/green circle, even numbers in a red/pink circle. Below the current number is displayed the initial number in the sequence (n) and the number of times the function was applied in the sequence (i, where the first number is i=0, the second i=1, etc.)
 
 ![Collatz conjecture visualization example](/media/images/number_examples.png "Collatz conjecture visualization example")
 
