@@ -25,6 +25,6 @@ end
 
 while @n <= 1000000
   generate_sequence
-  puts
+  puts; puts
   @n += 1
 end

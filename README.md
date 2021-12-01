@@ -6,21 +6,19 @@ A project developed for the Visualization Studio in the D.H. Hill Jr. Library at
 
 This visualization generates and displays sequences of integers where each number in the sequence is obtained from the previous one as follows:
 
-1. If the previous number is even, divide by 2 (x ÷ 2)
-2. If the previous number is odd, multiply by 3 and add 1 (3x + 1).
+1. If the previous number is odd, multiply by 3 and add 1 (3x + 1)
+2. If the previous number is even, divide by 2 (x ÷ 2)
 
-The conjecture states that, regardless of which number (n) is selected as the first term, the sequence will eventually reach 1, at which point it enters a loop (4, 2, 1, 4, 2, 1, etc.). In the visualization, when the sequence reaches 1, the process begins again with the first term (n) incremented by 1.
+The Collatz Conjecture states that, for any positive integer selected as the first term, the sequence will eventually reach 1, at which point it enters a loop (4, 2, 1, 4, 2, 1, etc.). In the visualization, when the sequence reaches 1, the process begins again with the first term incremented by 1.
 
 ### Visual components
 
-Each new number in the sequence is generated and displayed at a rate of about 1 every 0.75 seconds. Values are presented inside a colored circle: odd numbers in a blue/green circle, even numbers in a red/pink circle. Below the current number is displayed the initial number in the sequence (n) and the number of times the calculation was applied to generate the number (i, where the first number is 0, the second 1, etc.)
+Each new number in the sequence is generated and displayed at a rate of about 1 every 0.75 seconds. Values are presented inside a colored circle: odd numbers in a blue/green circle, even numbers in a red/pink circle. Below the current number is displayed the initial number in the sequence (n) and the number of times the funtion was applied to generate the number (i, where the first number is i=0, the second i=1, etc.)
 
 ![Collatz conjecture visualization example](/media/images/number_examples.png "Collatz conjecture visualization example")
 
-NOTE: The colored outline around the circle is for visual interest only and is not meant to convey any information.
 
-
-### Audio components
+### Audible components
 
 Each number in the sequence is accompanied by a tone in the C major pentatonic scale:
 
@@ -29,9 +27,9 @@ Each number in the sequence is accompanied by a tone in the C major pentatonic s
 The following rules determine which tone is heard:
 
 * 4, 2 and 1 are always accompanied by E3, D3 and C3 respectively, providing a musical resolution to the sequence
-* The initial number in the sequence is accompanied by A4  (except 4, 2 or 1)
-* If the number is higher than the previous one (i.e. 3x + 1) it is accompanied by C4 (except 4, 2 or 1)
-* If the number is lower than the previous one (i.e. x ÷ 2) it is accompanied by G3 (except 4, 2 or 1)
+* The initial number in the sequence (except 4, 2 or 1) is accompanied by A4 
+* If the number is higher than the previous one (3x + 1) it is accompanied by C4 (except 4, 2 or 1)
+* If the number is lower than the previous one (x ÷ 2) it is accompanied by G3 (except 4, 2 or 1)
 
 
 ## Preview in your browser
@@ -56,19 +54,22 @@ bash zip.sh
 
 ## For kicks
 
-There are 2 Ruby scripts included that you can run from the command line just for fun.
+There are 2 Ruby scripts included that you can run from the command line just for fun (if you have Ruby installed, which you probably do even if you didn't know it).
 
-* `collatz_sequences.rb` - Generates and outputs full sequences for all numbers from 1 to 1,000,000
-* `collatz_sequence_lengths.rb` - Generates full sequences for all numbers from 1 to 1,000,000 but only outputs the length of each sequence
+* `collatz_sequence_lengths.rb` - Generates full sequences for all numbers from 1 to 1,000,000 and outputs the length of each sequence. Notice how many of the sequences have the same length, and how those tend to cluster together. Don't try to find a pattern in this data as it could drive you insane.
+
+* `collatz_sequences.rb` - Generates and outputs full sequences for all numbers from 1 to 1,000,000. This one takes longer to run, and is less interesting.
 
 
 Run either of these from the command line with:
 
-```
-ruby collatz_sequences.rb
-```
- or 
 
 ```
 ruby collatz_sequence_lengths.rb
+```
+
+or
+
+```
+ruby collatz_sequences.rb
 ```
