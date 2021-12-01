@@ -2,6 +2,18 @@
 
 A project developed for the [Visualization Studio in the D.H. Hill, Jr. Library](https://www.lib.ncsu.edu/spaces/visualization-studio) at NC State University, based on the [Collatz Conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture).
 
+
+## Preview in your browser
+
+The visualization will scale to fit any size browser window. To run it:
+
+1. Clone or download the files in this repository
+2. Open `index.html` in a browser
+3. Press any key to start
+
+The visualization will continue indefinitely, until the page is refreshed.
+
+
 ## Description
 
 This visualization generates and displays sequences of integers where each number in the sequence is obtained from the previous one as follows:
@@ -32,17 +44,6 @@ The following rules determine which tone is heard:
 * Any subsequent number (except 4, 2 or 1) that's lower than the previous one (x ÷ 2) is accompanied by G3
 
 
-## Preview in your browser
-
-The visualization will scale to fit any size browser window. To run it:
-
-1. Clone or download the files  in this repository
-2. Open `index.html` in a browser
-3. Press any key to start
-
-The visualization will continue indefinitely, until the page is refreshed.
-
-
 ## For kicks
 
 There are 2 Ruby scripts included that you can run from the command line just for fun (if you have Ruby installed, which you probably do even if you didn't know it).
@@ -53,7 +54,6 @@ There are 2 Ruby scripts included that you can run from the command line just fo
 
 
 Run either of these from the command line with:
-
 
 ```
 ruby collatz_sequence_lengths.rb
