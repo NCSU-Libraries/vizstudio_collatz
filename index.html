@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3x + 1</title>
+  <link  rel="stylesheet" type="text/css" href="css/vizstudio.css"/>
+  <link  rel="stylesheet" type="text/css" href="css/vizstudio_12zone.css"/>
+</head>
+
+<body>
+
+  <div id="vizstudio">
+
+    <div class="zone-wrapper">
+
+      <div id="zone-1" class="zone"></div>
+
+      <div id="zone-2" class="zone"></div>
+
+      <div id="zone-3" class="zone"></div>
+
+      <div id="zone-4" class="zone"></div>
+
+      <div id="zone-5" class="zone"></div>
+
+      <div id="zone-6" class="zone"></div>
+
+      <div id="zone-7" class="zone"></div>
+
+      <div id="zone-8" class="zone"></div>
+
+      <div id="zone-9" class="zone"></div>
+
+      <div id="zone-10" class="zone"></div>
+
+      <div id="zone-11" class="zone"></div>
+
+      <div id="zone-12" class="zone"></div>
+
+    </div>
+
+  </div>
+
+
+  <div id="audio">
+    <audio preload="auto" src="media/audio/a4.wav" id="audio-start"/>
+    <audio preload="auto" src="media/audio/c4.wav" id="audio-up"/>
+    <audio preload="auto" src="media/audio/g3.wav" id="audio-down"/>
+    <audio preload="auto" src="media/audio/e3.wav" id="audio-4"/>
+    <audio preload="auto" src="media/audio/d3.wav" id="audio-2"/>
+    <audio preload="auto" src="media/audio/c3.wav" id="audio-1"/>
+  </div>
+
+
+  <script type="text/javascript" src="js/vizstudio_utils.js"></script>
+  <script type="text/javascript" src="js/vizstudio_collatz.js"></script>
+  <script type="text/javascript" src="js/transform_scale.js"></script>
+  <script>
+    new VizStudioCollatz();
+  </script>
+
+</body>
+
+</html>
