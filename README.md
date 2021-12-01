@@ -11,7 +11,7 @@ The visualization will scale to fit any size browser window. To run it:
 2. Open `index.html` in a browser
 3. Press any key to start
 
-The visualization will continue indefinitely, until the page is refreshed.
+Make sure your sound is on. The visualization will continue indefinitely, until the page is refreshed.
 
 
 ## Description
