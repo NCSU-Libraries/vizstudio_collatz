@@ -1,6 +1,6 @@
 # Collatz Conjecture
 
-A project developed for the Visualization Studio in the D.H. Hill Jr. Library at NC State University, based on the [Collatz Conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture).
+A project developed for the [Visualization Studio in the D.H. Hill, Jr. Library](https://www.lib.ncsu.edu/spaces/visualization-studio) at NC State University, based on the [Collatz Conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture).
 
 ## Description
 
@@ -13,23 +13,23 @@ The Collatz Conjecture states that, for any positive integer selected as the fir
 
 ### Visual components
 
-Each new number in the sequence is generated and displayed at a rate of about 1 every 0.75 seconds. Values are presented inside a colored circle: odd numbers in a blue/green circle, even numbers in a red/pink circle. Below the current number is displayed the initial number in the sequence (n) and the number of times the function was applied in the sequence (i, where the first number is i=0, the second i=1, etc.)
+Each new number in the sequence is generated and displayed at a rate of about 1 every 0.75 seconds. Values are presented inside a colored circle: odd numbers in a blue/green circle, even numbers in a red/pink circle. Below the current number is displayed the initial number in the sequence (n) and the number of times the function was applied in the sequence (i, where the first number in the sequence is i=0, the second i=1, etc.)
 
 ![Collatz conjecture visualization example](/media/images/number_examples.png "Collatz conjecture visualization example")
 
 
 ### Audible components
 
-Each number in the sequence is accompanied by a tone in the C major pentatonic scale:
+Each number is accompanied by a tone in the C major pentatonic scale:
 
 ![Notes in the C major pentatonic!](/media/images/pentatonic.png "C major pentatonic")
 
 The following rules determine which tone is heard:
 
 * 4, 2 and 1 are always accompanied by E3, D3 and C3 respectively, providing a musical resolution to the sequence
-* The initial number in the sequence is accompanied by A4 (unless that number if 4, 2 or 1)
-* If the number is higher than the previous one (3x + 1) it is accompanied by C4 (except 4, 2 or 1)
-* If the number is lower than the previous one (x ÷ 2) it is accompanied by G3 (except 4, 2 or 1)
+* The first number in each sequence is accompanied by A4 (unless that number is 4, 2 or 1)
+* Any subsequent number (except 4, 2 or 1) that's higher than the previous one (3x + 1) is accompanied by C4 
+* Any subsequent number (except 4, 2 or 1) that's lower than the previous one (x ÷ 2) is accompanied by G3
 
 
 ## Preview in your browser
@@ -37,19 +37,10 @@ The following rules determine which tone is heard:
 The visualization will scale to fit any size browser window. To run it:
 
 1. Clone or download the files  in this repository
-2. Open index.html in a browser
+2. Open `index.html` in a browser
 3. Press any key to start
 
 The visualization will continue indefinitely, until the page is refreshed.
-
-
-## Zip script
-
-A bash script is provided to zip all files for easier transfer. To run it (Mac/Linux only):
-
-```
-bash zip.sh
-```
 
 
 ## For kicks
@@ -72,4 +63,13 @@ or
 
 ```
 ruby collatz_sequences.rb
+```
+
+
+## Zip script
+
+A bash script is provided to zip all files for easier transfer. To run it (Mac/Linux only):
+
+```
+bash zip.sh
 ```
